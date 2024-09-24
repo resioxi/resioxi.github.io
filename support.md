@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: support
 title: 技术支持 
 ---
 
