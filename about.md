@@ -17,7 +17,7 @@ title: 关于我
 <a href="/2016/10/jekyll_tutorials1/"> Jekyll 搭建个人博客 </a>
 教程
 
-111111111111111111111111111
+
 有关于博客主题的建议和意见都可以提给我，让我们一起来打造一个精美的主题吧~ 
 
 博客源码在 <a target="_blank" href='https://github.com/leopardpan/leopardpan.github.io/'>Github</a> 上，你的 Star 是我更新的动力，谢谢~
