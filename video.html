@@ -1,0 +1,41 @@
+---
+layout: page
+title: 电影
+header: 所有文章
+group: navigation
+---
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ page.header }}</h1>
+  </header>
+  <main>
+    <section class="content">
+      <h2>{{ page.title }}</h2>
+      <p>这里是关于电影的所有文章。</p>
+      <div class="post-list">
+        {% for post in site.posts %}
+          {% if post.category == '电影' %}
+            <article class="post">
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time>
+              <p>{{ post.excerpt }}</p>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>

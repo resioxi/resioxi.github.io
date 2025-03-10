@@ -68,6 +68,7 @@ nav:
     - {title: 标签, description: tags, url: '/tags'}      
     - {title: 技术支持, description: support, url: '/support'}      
     - {title: 关于我, description: about, url: '/about'}   
+    - {title: 电影, description: video, url: '/video'}   
     
 
 # Pagination
