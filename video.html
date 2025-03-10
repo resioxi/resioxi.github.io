@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 电影
-header: 所有文章
+header: 所有电影
 group: navigation
 ---
 
@@ -22,7 +22,7 @@ group: navigation
       <h2>{{ page.title }}</h2>
       <p>这里是关于电影的所有文章。</p>
       <div class="post-list">
-        {% for post in site.posts %}
+        {% for post in site.video %}
           {% if post.category == '电影' %}
             <article class="post">
               <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
